@@ -1,13 +1,13 @@
-export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
 export const ADD_TODO = 'ADD_TODO';
 
 export const increment = () => ({
-  type: 'INCREMENT_COUNTER'
+  type: 'INCREMENT'
 });
 
 export const decrement = () => ({
-  type: 'DECREMENT_COUNTER'
+  type: 'DECREMENT'
 });
 
 export const addTodo = () => ({
