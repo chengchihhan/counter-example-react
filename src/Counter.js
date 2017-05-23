@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Counter extends Component {
+export default const Counter = ({onIncrement, onDecrement, value}) => (
+  <div>
+    <p>
+      Clicked: <span id="value">{value}</span> times
+      <button onClick={onIncrement}>+</button>
+      {' '}
+      <button onClick={onDecrement}>-</button>
+    </p>
+  </div>
+);
 
-  static propTypes = {
-    value: PropTypes.number.isRequired,
-    onIncrement: PropTypes.func.isRequired,
-    onDecrement: PropTypes.func.isRequired
-  }
 
-  render() {
-    const {onIncrement, onDecrement, value} = this.props;
-    return(
-      <div>
-        <p>
-          Clicked: <span id="value">{value}</span> times
-          <button onClick={onIncrement}>+</button>
-          {' '}
-          <button onClick={onDecrement}>-</button>
-        </p>
-      </div>
-    );
-  }
-};
+
+Counter.propTypes = {
+  value: PropTypes.number.isRequired,
+  onIncrement: PropTypes.func.isRequired,
+  onDecrement: PropTypes.func.isRequired
+}
