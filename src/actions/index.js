@@ -3,13 +3,13 @@ export const DECREMENT = 'DECREMENT';
 export const ADD_TODO = 'ADD_TODO';
 
 export const increment = () => ({
-  type: 'INCREMENT'
+  type: INCREMENT
 });
 
 export const decrement = () => ({
-  type: 'DECREMENT'
+  type: DECREMENT
 });
 
 export const addTodo = () => ({
-  type: 'ADD_TODO'
+  type: ADD_TODO
 });
