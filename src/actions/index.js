@@ -2,11 +2,11 @@ export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const ADD_TODO = 'ADD_TODO';
 
-export const increment = () => ({
+export const onIncrement = () => ({
   type: INCREMENT
 });
 
-export const decrement = () => ({
+export const onDecrement = () => ({
   type: DECREMENT
 });
 
